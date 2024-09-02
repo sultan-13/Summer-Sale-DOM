@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Summer-Sale</title>
+    <link rel="shortcut icon" href="images/Summer 1.png" type="image/x-icon">
     <!-- daisy cdn -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -12,19 +13,308 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100..900&display=swap" rel="stylesheet">
 
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/019bec8745.js" crossorigin="anonymous"></script>
+
     <style>
         .font-work-sans{
             font-family: "Work Sans", sans-serif;
         }
     </style>
+
+    <!-- customization -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                'header-bg': '#F9F6E2',
+                'primary-color':'#E527B2',
+                'gray-color' : '#F8F8F8',
+                'card-bg' : '#1111110d',
+              },
+              borderRadius: {
+        'custom': '0px 8px 8px 0px',
+      }
+              
+            }
+          }
+        }
+      </script>
 </head>
 <body class="font-work-sans">
 
-    <header>
+    <header class="bg-header-bg">
+
+        <div class="hero min-h-screen">
+            <div class="hero-content flex-col-reverse lg:flex-row-reverse">
+              <img
+                src="images/Summer 1.png"
+                class="max-w-72 mx-auto md:max-w-lg" />
+              <div>
+                <h5 class="text-xl md:text-2xl xl:text-3xl font-medium text-center">---SALE FEVER---</h5>
+                <h3 class="text-2xl md:text-4xl xl:text-6xl font-bold mt-5 mb-8 md:mt-10 md:mb-16">Purchase TK 200 or <br> above & get <span class="text-primary-color">20% off</span></h3>
+                <p class="flex flex-col lg:flex-row items-center justify-center gap-4">
+                    <span class="text-xl md:text-2xl font-medium">Use Promo Code</span>
+                    <button class="text-xl md:text-2xl bg-primary-color py-2 px-3 text-white md:py-3 md:px-6 rounded-lg font-semibold">SELL200</button>
+                </p>
+              </div>
+            </div>
+          </div>
 
     </header>
 
-    <main>
+    <main class="bg-gray-color">
+        <div class="max-w-6xl mx-auto flex flex-col lg:flex-row gap-6 px-5  pt-10 md:pt-24">
+            <div class="flex-1">
+                <!-- accessories section -->
+
+                <section>
+                    <h4 class="text-3xl md:text-4xl lg:text-5xl font-semibold mb-8">Kitchenware</h4>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 items-center">
+
+                        <!-- card-1 -->
+
+                        <div class="bg-white shadow-lg p-5 rounded-lg space-y-3">
+                            <figure class="flex justify-center items-center bg-card-bg px-16 py-7 rounded-lg ">
+                              <img class="h-[130px]"
+                                src="images/prod1.png"
+                                alt="prod" />
+                            </figure>
+                            
+                                <div class="flex items-center justify-center text-2xl">
+                                    <i class="fa-solid fa-star text-amber-400"></i>
+                                    <i class="fa-solid fa-star text-amber-400"></i>
+                                    <i class="fa-solid fa-star text-amber-400"></i>
+                                    <i class="fa-regular fa-star text-amber-400"></i>
+                                    <i class="fa-regular fa-star text-amber-400"></i>
+                                    
+                                  </div>
+                                  <h4 class="text-xl font-semibold text-center">K. Accessories</h4>
+                                  <p class="text-xl text-[#11111180] text-center">39.00 TK</p>
+                              
+                            
+                          </div>
+                        <!-- card-2 -->
+
+                        <div class="bg-white shadow-lg p-5 rounded-lg space-y-3">
+                            <figure class="flex justify-center items-center bg-card-bg px-16 py-7 rounded-lg ">
+                              <img class="h-[130px]"
+                                src="images/prod2.png"
+                                alt="prod" />
+                            </figure>
+                            
+                                <div class="flex items-center justify-center text-2xl">
+                                    <i class="fa-regular fa-star text-amber-400"></i>
+                                    <i class="fa-regular fa-star text-amber-400"></i>
+                                    <i class="fa-regular fa-star text-amber-400"></i>
+                                    <i class="fa-regular fa-star text-amber-400"></i>
+                                    <i class="fa-regular fa-star text-amber-400"></i>
+                                    
+                                  </div>
+                                  <h4 class="text-xl font-semibold text-center">K. Accessories</h4>
+                                  <p class="text-xl text-[#11111180] text-center">25.00 TK</p>
+                              
+                            
+                          </div>
+                        <!-- card-3 -->
+
+                        <div class="bg-white shadow-lg p-5 rounded-lg space-y-3">
+                            <figure class="flex justify-center items-center bg-card-bg px-16 py-7 rounded-lg ">
+                              <img class="h-[130px]"
+                                src="images/prod3.png"
+                                alt="prod" />
+                            </figure>
+                            
+                                <div class="flex items-center justify-center text-2xl">
+                                    <i class="fa-solid fa-star text-amber-400"></i>
+                                    <i class="fa-solid fa-star text-amber-400"></i>
+                                    <i class="fa-solid fa-star text-amber-400"></i>
+                                    <i class="fa-solid fa-star text-amber-400"></i> 
+                                    <i class="fa-regular fa-star text-amber-400"></i>
+                                    
+                                  </div>
+                                  <h4 class="text-xl font-semibold text-center">Home Cooker</h4>
+                                  <p class="text-xl text-[#11111180] text-center">49.00 TK</p>
+                              
+                            
+                          </div>
+
+                    </div>
+                </section>
+
+                <!-- sports section -->
+
+                <section class="pt-6 md:pt-14">
+                    <h4 class="text-3xl md:text-4xl lg:text-5xl font-semibold mb-8">Sportswear</h4>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 items-center">
+
+                        <!-- card-4 -->
+
+                        <div class="bg-white shadow-lg p-5 rounded-lg space-y-3">
+                            <figure class="flex justify-center items-center bg-card-bg px-16 py-7 rounded-lg ">
+                              <img class="h-[130px]"
+                                src="images/prod4.png"
+                                alt="prod" />
+                            </figure>
+                            
+                                <div class="flex items-center justify-center text-2xl">
+                                    <i class="fa-solid fa-star text-amber-400"></i>
+                                    <i class="fa-solid fa-star text-amber-400"></i>
+                                    <i class="fa-regular fa-star text-amber-400"></i>
+                                    <i class="fa-regular fa-star text-amber-400"></i>
+                                    <i class="fa-regular fa-star text-amber-400"></i>
+                                    
+                                  </div>
+                                  <h4 class="text-xl font-semibold text-center">Sports Back Cap</h4>
+                                  <p class="text-xl text-[#11111180] text-center">49.00 TK</p>
+                              
+                            
+                          </div>
+                        <!-- card-5 -->
+
+                        <div class="bg-white shadow-lg p-5 rounded-lg space-y-3">
+                            <figure class="flex justify-center items-center  bg-card-bg px-16 py-7 rounded-lg ">
+                              <img class="h-[130px]"
+                                src="images/prod5.png"
+                                alt="prod" />
+                            </figure>
+                            
+                                <div class="flex items-center justify-center text-2xl">
+                                    <i class="fa-solid fa-star text-amber-400"></i>
+                                    <i class="fa-solid fa-star text-amber-400"></i>
+                                    <i class="fa-solid fa-star text-amber-400"></i>
+                                    <i class="fa-solid fa-star text-amber-400"></i>
+                                    <i class="fa-regular fa-star text-amber-400"></i>
+                                    
+                                  </div>
+                                  <h4 class="text-xl font-semibold text-center">Full Jersey Set</h4>
+                                  <p class="text-xl text-[#11111180] text-center">69.00 TK</p>
+                              
+                            
+                          </div>
+                        <!-- card-6 -->
+
+                        <div class="bg-white shadow-lg p-5 rounded-lg space-y-3">
+                            <figure class="flex justify-center items-center bg-card-bg px-16 py-7 rounded-lg ">
+                              <img class="h-[130px]"
+                                src="images/prod6.png"
+                                alt="prod" />
+                            </figure>
+                            
+                                <div class="flex items-center justify-center text-2xl">
+                                    <i class="fa-solid fa-star text-amber-400"></i>
+                                    <i class="fa-solid fa-star text-amber-400"></i>
+                                    <i class="fa-solid fa-star text-amber-400"></i>
+                                    <i class="fa-regular fa-star text-amber-400"></i>
+                                    <i class="fa-regular fa-star text-amber-400"></i>
+                                    
+                                  </div>
+                                  <h4 class="text-xl font-semibold text-center">Sports cates</h4>
+                                  <p class="text-xl text-[#11111180] text-center">159.00 TK</p>
+                              
+                            
+                          </div>
+
+                    </div>
+                </section>
+
+                <!-- furniture section -->
+
+                <section class="pt-6 md:pt-14">
+                    <h4 class="text-3xl md:text-4xl lg:text-5xl font-semibold mb-8">Furniture</h4>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 items-center">
+
+                        <!-- card-7 -->
+
+                        <div class="bg-white shadow-lg p-5 rounded-lg space-y-3">
+                            <figure class="flex justify-center items-center bg-card-bg px-16 py-7 rounded-lg ">
+                              <img class="h-[130px]"
+                                src="images/prod7.png"
+                                alt="prod" />
+                            </figure>
+                            
+                                <div class="flex items-center justify-center text-2xl">
+                                    <i class="fa-solid fa-star text-amber-400"></i>
+                                    <i class="fa-solid fa-star text-amber-400"></i>
+                                    <i class="fa-solid fa-star text-amber-400"></i>
+                                    <i class="fa-solid fa-star text-amber-400"></i>
+                                    <i class="fa-regular fa-star text-amber-400"></i>
+                                    
+                                  </div>
+                                  <h4 class="text-xl font-semibold text-center">Single Relax Chair</h4>
+                                  <p class="text-xl text-[#11111180] text-center">185.00 TK</p>
+                              
+                            
+                          </div>
+                        <!-- card-8 -->
+
+                        <div class="bg-white shadow-lg p-5 rounded-lg space-y-3">
+                            <figure class="flex justify-center items-center  bg-card-bg px-16 py-7 rounded-lg ">
+                              <img class="h-[130px]"
+                                src="images/prod8.png"
+                                alt="prod" />
+                            </figure>
+                            
+                                <div class="flex items-center justify-center text-2xl">
+                                    <i class="fa-solid fa-star text-amber-400"></i>
+                                    <i class="fa-solid fa-star text-amber-400"></i>
+                                    <i class="fa-solid fa-star text-amber-400"></i>
+                                    <i class="fa-solid fa-star text-amber-400"></i>
+                                    <i class="fa-solid fa-star text-amber-400"></i>
+                                    
+                                    
+                                  </div>
+                                  <h4 class="text-xl font-semibold text-center">Children play</h4>
+                                  <p class="text-xl text-[#11111180] text-center">299.00 TK</p>
+                              
+                            
+                          </div>
+                        <!-- card-9 -->
+
+                        <div class="bg-white shadow-lg p-5 rounded-lg space-y-3">
+                            <figure class="flex justify-center items-center bg-card-bg px-16 py-7 rounded-lg ">
+                              <img class="h-[130px]"
+                                src="images/prod9.png"
+                                alt="prod" />
+                            </figure>
+                            
+                                <div class="flex items-center justify-center text-2xl">
+                                    <i class="fa-solid fa-star text-amber-400"></i>
+                                    <i class="fa-solid fa-star text-amber-400"></i>
+                                    <i class="fa-solid fa-star text-amber-400"></i>
+                                    <i class="fa-solid fa-star text-amber-400"></i>
+                                    <i class="fa-solid fa-star text-amber-400"></i>  
+                                  </div>
+                                  <h4 class="text-xl font-semibold text-center">Flexible Sofa</h4>
+                                  <p class="text-xl text-[#11111180] text-center">339.00 TK</p>
+                              
+                            
+                          </div>
+
+                    </div>
+                </section>
+                
+
+            </div>
+            <div class="w-full lg:w-[240px] xl:w-[300px]">
+
+                <div class="bg-white lg:mt-20 p-4 xl:p-6 rounded-lg">
+                    <h5 class="text-xl xl:text-2xl font-medium">
+                        Have coupon?
+                    </h5>
+                    <div class="flex items-center mt-4">
+                    <!-- <input type="text" placeholder="Coupon code" class="input input-bordered w-full text-xl" />
+                    <button class="btn btn-secondary text-xl">Apply</button>
+                     -->
+                    <input type="text" name="" id="" class="border rounded-lg h-14 p-2 md:p-4 text-base xl:text-xl w-full outline-none" placeholder="Coupon code">
+                    <button class="h-14 bg-primary-color text-white  rounded-custom p-2 md:p-4 -ml-2 xl:-ml-2 text-base xl:text-xl font-semibold">Apply</button>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
 
     </main>
     
