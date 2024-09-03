@@ -319,7 +319,7 @@
                 class="border rounded-lg h-14 p-2 md:p-4 text-base xl:text-xl w-full outline-none"
                 placeholder="Coupon code"
               />
-              <button
+              <button id="apply-btn"
                 class="h-14 bg-primary-color text-white rounded-custom p-2 md:p-4 -ml-2 xl:-ml-2 text-base xl:text-xl font-semibold" disabled
               >
                 Apply
@@ -335,19 +335,19 @@
             </div>
 
             <div id="price-container" class="space-y-3 pt-3 pb-6 border-t border-b">
-              <h5 class="text-xl xl:text-2xl font-medium">
+              <h5 class="text-xl font-medium">
                 Total price: <span class="text-[#11111180]">00.00 TK</span>
               </h5>
-              <h5 class="text-xl xl:text-2xl font-medium">
+              <h5 class="text-xl  font-medium">
                 Discount: <span class="text-[#11111180]">00.00 TK</span>
               </h5>
-              <h5 class="text-xl xl:text-2xl font-medium">
+              <h5 class="text-xl  font-medium">
                 Total: <span class="text-[#11111180]">00.00 TK</span>
               </h5>
             </div>
 
             <!-- Open the modal using ID.showModal() method -->
-            <button
+            <button id="modal-btn"
               class="bg-primary-color py-3 rounded-lg w-full  lg:w-52 xl:w-64 mt-6 lg:absolute text-center text-xl font-semibold text-white"
               onclick="my_modal_1.showModal()" disabled
             >
