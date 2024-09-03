@@ -1,0 +1,21 @@
+
+function handClick(data)
+{
+    const title = data.childNodes[5].innerText
+    const price = parseFloat(data.childNodes[7].innerText.split(" ")[0]);
+    console.log(price);
+    const titleContainer = document.getElementById('title-container');
+    const count = titleContainer.childElementCount;
+    const h5 = document.createElement('h5');
+    h5.innerHTML = `
+    ${count+1}. ${title}
+    `
+    h5.setAttribute('class','text-xl xl:text-2xl font-medium');
+    titleContainer.appendChild(h5)
+    const PriceContainer = document.getElementById('price-container');
+    const previousPrice = parseFloat(PriceContainer.children[0].children[0].innerText.split(" ")[0])
+    console.log(previousPrice)
+    
+    
+
+}

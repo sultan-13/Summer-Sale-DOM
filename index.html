@@ -99,7 +99,7 @@
             >
               <!-- card-1 -->
 
-              <div class="bg-white shadow-lg p-5 rounded-lg space-y-3 cursor-pointer">
+              <div onclick="handClick(this)" class="bg-white shadow-lg p-5 rounded-lg space-y-3 cursor-pointer">
                 <figure
                   class="flex justify-center items-center bg-card-bg px-16 py-7 rounded-lg"
                 >
@@ -120,7 +120,7 @@
               </div>
               <!-- card-2 -->
 
-              <div class="bg-white shadow-lg p-5 rounded-lg space-y-3 cursor-pointer">
+              <div onclick="handClick(this)" class="bg-white shadow-lg p-5 rounded-lg space-y-3 cursor-pointer">
                 <figure
                   class="flex justify-center items-center bg-card-bg px-16 py-7 rounded-lg"
                 >
@@ -141,7 +141,7 @@
               </div>
               <!-- card-3 -->
 
-              <div class="bg-white shadow-lg p-5 rounded-lg space-y-3 cursor-pointer">
+              <div onclick="handClick(this)" class="bg-white shadow-lg p-5 rounded-lg space-y-3 cursor-pointer">
                 <figure
                   class="flex justify-center items-center bg-card-bg px-16 py-7 rounded-lg"
                 >
@@ -172,7 +172,7 @@
             >
               <!-- card-4 -->
 
-              <div class="bg-white shadow-lg p-5 rounded-lg space-y-3 cursor-pointer">
+              <div onclick="handClick(this)" class="bg-white shadow-lg p-5 rounded-lg space-y-3 cursor-pointer">
                 <figure
                   class="flex justify-center items-center bg-card-bg px-16 py-7 rounded-lg"
                 >
@@ -193,7 +193,7 @@
               </div>
               <!-- card-5 -->
 
-              <div class="bg-white shadow-lg p-5 rounded-lg space-y-3 cursor-pointer">
+              <div onclick="handClick(this)" class="bg-white shadow-lg p-5 rounded-lg space-y-3 cursor-pointer">
                 <figure
                   class="flex justify-center items-center bg-card-bg px-16 py-7 rounded-lg"
                 >
@@ -214,7 +214,7 @@
               </div>
               <!-- card-6 -->
 
-              <div class="bg-white shadow-lg p-5 rounded-lg space-y-3 cursor-pointer">
+              <div onclick="handClick(this)" class="bg-white shadow-lg p-5 rounded-lg space-y-3 cursor-pointer">
                 <figure
                   class="flex justify-center items-center bg-card-bg px-16 py-7 rounded-lg"
                 >
@@ -245,7 +245,7 @@
             >
               <!-- card-7 -->
 
-              <div class="bg-white shadow-lg p-5 rounded-lg space-y-3 cursor-pointer">
+              <div onclick="handClick(this)" class="bg-white shadow-lg p-5 rounded-lg space-y-3 cursor-pointer">
                 <figure
                   class="flex justify-center items-center bg-card-bg px-16 py-7 rounded-lg"
                 >
@@ -266,7 +266,7 @@
               </div>
               <!-- card-8 -->
 
-              <div class="bg-white shadow-lg p-5 rounded-lg space-y-3 cursor-pointer">
+              <div onclick="handClick(this)" class="bg-white shadow-lg p-5 rounded-lg space-y-3 cursor-pointer">
                 <figure
                   class="flex justify-center items-center bg-card-bg px-16 py-7 rounded-lg"
                 >
@@ -285,7 +285,7 @@
               </div>
               <!-- card-9 -->
 
-              <div class="bg-white shadow-lg p-5 rounded-lg space-y-3 cursor-pointer">
+              <div onclick="handClick(this)" class="bg-white shadow-lg p-5 rounded-lg space-y-3 cursor-pointer">
                 <figure
                   class="flex justify-center items-center bg-card-bg px-16 py-7 rounded-lg"
                 >
@@ -320,7 +320,7 @@
                 placeholder="Coupon code"
               />
               <button
-                class="h-14 bg-primary-color text-white rounded-custom p-2 md:p-4 -ml-2 xl:-ml-2 text-base xl:text-xl font-semibold"
+                class="h-14 bg-primary-color text-white rounded-custom p-2 md:p-4 -ml-2 xl:-ml-2 text-base xl:text-xl font-semibold" disabled
               >
                 Apply
               </button>
@@ -330,33 +330,33 @@
           <div class="bg-white mt-6 p-4 lg:pt-4 lg:pl-4 lg:pr-4 lg:pb-8 xl:pt-6  xl:pl-6  xl:pr-6  xl:pb-14 rounded-lg lg:relative">
             <!-- name container -->
 
-            <div class="space-y-3 pb-3">
+            <div id="title-container" class="space-y-3 pb-3">
               
             </div>
 
-            <div class="space-y-3 pt-3 pb-6 border-t border-b">
+            <div id="price-container" class="space-y-3 pt-3 pb-6 border-t border-b">
               <h5 class="text-xl xl:text-2xl font-medium">
-                Total price: <span class="text-[#11111180]">00.00TK</span>
+                Total price: <span class="text-[#11111180]">00.00 TK</span>
               </h5>
               <h5 class="text-xl xl:text-2xl font-medium">
-                Discount: <span class="text-[#11111180]">00.00TK</span>
+                Discount: <span class="text-[#11111180]">00.00 TK</span>
               </h5>
               <h5 class="text-xl xl:text-2xl font-medium">
-                Total: <span class="text-[#11111180]">00.00TK</span>
+                Total: <span class="text-[#11111180]">00.00 TK</span>
               </h5>
             </div>
 
             <!-- Open the modal using ID.showModal() method -->
             <button
               class="bg-primary-color py-3 rounded-lg w-full  lg:w-52 xl:w-64 mt-6 lg:absolute text-center text-xl font-semibold text-white"
-              onclick="my_modal_1.showModal()"
+              onclick="my_modal_1.showModal()" disabled
             >
               Make Purchase
             </button>
             <dialog id="my_modal_1" class="modal p-5">
               <div class="modal-box flex flex-col items-center">
                 <img src="images/congo.png" alt="">
-                <h3 class="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold">Hello!</h3>
+                <h3 class="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold">Congratulations!</h3>
                 <p class="md:pt-4 text-base md:text-xl text-[#11111180]">
                   Your Purchase the product
                 </p>
@@ -372,5 +372,6 @@
         </div>
       </div>
     </main>
+    <script src="js/summer-sale.js"></script>
   </body>
 </html>
