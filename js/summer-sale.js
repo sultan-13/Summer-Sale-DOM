@@ -20,6 +20,11 @@ function handClick(data) {
   PriceContainer.children[0].children[0].innerText =
     globalTotal.toFixed(2) + " TK";
 
+   
+    PriceContainer.children[1].children[0].innerText ="00.00 TK";
+    PriceContainer.children[2].children[0].innerText =
+      globalTotal.toFixed(2) + " TK";
+
   if (globalTotal > 0) {
     let modalBtn = document.getElementById("modal-btn");
     modalBtn.removeAttribute("disabled");
@@ -35,7 +40,7 @@ function apply() {
   let cuponText = document.getElementById("cupon-text").value;
   document.getElementById("cupon-text").value = "";
   let sellBtn = document.getElementById("sell-btn").innerText;
-  let PriceContainer = document.getElementById("price-container");
+   PriceContainer = document.getElementById("price-container");
 
   if (globalTotal >= 200 && cuponText === sellBtn) {
     let discount = globalTotal * 0.2;
@@ -47,11 +52,7 @@ function apply() {
       finalTotal.toFixed(2) + " TK";
   }
 
-  else{
-    
-    PriceContainer.children[1].children[0].innerText ="00 TK";
-    PriceContainer.children[2].children[0].innerText = "00 TK";
-  }
+ 
   
   
 }
