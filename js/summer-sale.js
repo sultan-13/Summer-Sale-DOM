@@ -67,6 +67,6 @@ function apply() {
     applyBtn.setAttribute("disabled", "true");
     applyBtn.innerText = "Applied";
     applyBtn.style.backgroundColor = "gray";
-    applyBtn.style.fontSize = "16px"
+    applyBtn.style.fontSize = "14px xl:16px"
   }
 }
