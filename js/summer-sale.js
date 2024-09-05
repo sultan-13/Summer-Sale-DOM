@@ -42,6 +42,9 @@ function handClick(data) {
   if (globalTotal > 0) {
     let modalBtn = document.getElementById("modal-btn");
     modalBtn.removeAttribute("disabled");
+    function purchaseBtn(){
+      window.location.href = "index.html";
+    }
   }
 }
 
@@ -69,4 +72,9 @@ function apply() {
     applyBtn.style.backgroundColor = "gray";
     applyBtn.style.fontSize = "14px xl:16px"
   }
+}
+
+function purchaseBtn() {
+ 
+  window.location.href = "index.html";
 }

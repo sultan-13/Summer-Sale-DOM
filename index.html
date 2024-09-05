@@ -397,13 +397,12 @@
                 >
                   Congratulations!
                 </h3>
-                <p class="md:pt-4 text-base md:text-xl text-[#11111180]">
+                <p class="pt-2 md:pt-4 text-base md:text-xl text-[#11111180]">
                   Your Purchase the product
                 </p>
                 <div class="modal-action">
-                  <form>
-                    <!-- if there is a button in form, it will close the modal -->
-                    <button class="btn btn-sm md:btn-md btn-secondary text-xl font-semibold">
+                  <form method="dialog">
+                    <button onclick="purchaseBtn()" class="btn btn-sm md:btn-md btn-secondary text-xl font-semibold">
                       Go Home
                     </button>
                   </form>
