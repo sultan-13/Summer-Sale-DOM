@@ -43,7 +43,7 @@ function handClick(data) {
     applyBtn.removeAttribute("disabled");
   }
 
-  // purchase button disabled
+  // purchase button enabled
   if (globalTotal > 0) {
     let modalBtn = document.getElementById("modal-btn");
     modalBtn.removeAttribute("disabled");
@@ -68,6 +68,7 @@ function apply() {
       finalTotal.toFixed(2) + " TK";
 
     let applyBtn = document.getElementById("apply-btn");
+    //  apply button disabled
     applyBtn.setAttribute("disabled", "true");
     applyBtn.innerText = "Applied";
     applyBtn.style.backgroundColor = "gray";
