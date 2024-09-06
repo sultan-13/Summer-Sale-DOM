@@ -42,9 +42,7 @@ function handClick(data) {
   if (globalTotal > 0) {
     let modalBtn = document.getElementById("modal-btn");
     modalBtn.removeAttribute("disabled");
-    function purchaseBtn(){
-      window.location.href = "index.html";
-    }
+    
   }
 }
 
@@ -55,7 +53,7 @@ function apply() {
   let PriceContainer = document.getElementById("price-container");
 
 
-  if (globalTotal >= 200 && cuponText === sellBtn && !discountBtnApplied) {
+  if (cuponText === sellBtn && !discountBtnApplied) {
     discountBtnApplied = true; 
     let discount = globalTotal * 0.2;
     let finalTotal = globalTotal - discount;
