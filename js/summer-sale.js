@@ -4,7 +4,7 @@ let discountBtnApplied = false;
 function handClick(data) {
   // card title
   let title = data.childNodes[5].innerText;
-  // card title
+  // card price
   let price = parseFloat(data.childNodes[7].innerText.split(" ")[0]);
   let titleContainer = document.getElementById("title-container");
   let count = titleContainer.childElementCount;
